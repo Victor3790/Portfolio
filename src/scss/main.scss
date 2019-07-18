@@ -1,15 +1,54 @@
-$background: #000122;
-$text: #fff;
+/*Sass style sheet for my portfolio
+**Author: Víctor Hugo Escareño Crespo
+**Start date: 07/18/2019 13:30
+**End date:
+*/
+
+//Fonts and colors
+$backgroundColor: #161923;
+$green: #44dfab;
+$textColor: #9092a7;
+$titleColor: #fff;
+$titleFont: 'Anton', sans-serif;
+$textFont: 'Roboto', sans-serif;
+
+//Bootstrap imports
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/grid";
+
+@import "starBackground.scss";
 
 body{
-  width: 100vw;
+  min-width: 320px;
+  background-color: $backgroundColor;
+  color: $textColor;
+}
+
+h1, h2{
+  font-family: $titleFont;
+  color: $titleColor;
+}
+
+header{
   height: 100vh;
   padding: 0;
   margin: 0;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  overflow: hidden;
+}
+
+#headerText{
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: $background;
-  color: $text;
+  justify-content: center;
+  h1{
+    text-align: center;
+  }
 }
