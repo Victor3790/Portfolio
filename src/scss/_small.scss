@@ -1,4 +1,8 @@
 // Small devices (landscape phones, 576px and up)
 @include media-breakpoint-up(sm){
-
+  #projects{
+    img{
+      width: 100%;
+    }
+  }
 }
