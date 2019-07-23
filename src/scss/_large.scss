@@ -1,4 +1,27 @@
 // Large devices (desktops, 992px and up)
 @include media-breakpoint-up(lg) {
+  section{
+    h2{
+      margin-bottom: 4%;
+    }
+  }
 
+  .btn{
+    img{
+      width: 10% !important;
+    }
+  }
+
+  #about{
+    img{
+      width: 60%;
+      margin-top: 2%;
+    }
+  }
+
+  #technologies{
+    img{
+      width: 25%;
+    }
+  }
 }

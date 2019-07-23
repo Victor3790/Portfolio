@@ -1,5 +1,23 @@
 // Small devices (landscape phones, 576px and up)
 @include media-breakpoint-up(sm){
+  .btn{
+    img{
+      width: 15% !important;
+    }
+  }
+
+  section{
+    h2{
+      margin-bottom: 8%;
+    }
+  }
+
+  #headerText{
+    h1{
+      margin-bottom: 6%;
+    }
+  }
+
   #projects{
     img{
       width: 100%;

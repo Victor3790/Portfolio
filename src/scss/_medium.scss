@@ -1,4 +1,21 @@
 // Medium devices (tablets, 768px and up)
 @include media-breakpoint-up(md) {
+  #headerText{
+    h1{
+      margin-bottom: 5%;
+    }
+  }
 
+  #about{
+    img{
+      width: 80%;
+      margin-top: 10%;
+    }
+  }
+
+  #technologies{
+    img{
+      width: 35%;
+    }
+  }
 }
