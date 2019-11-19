@@ -6,7 +6,8 @@
 }
 
 .portfolio__item{
-  padding: 30px 0;
+  padding: 50px 0;
+  margin-bottom: 20px;
 }
 
 .portfolio__item__title{
@@ -15,9 +16,16 @@
 
 .portfolio__item__image{
   width: 95%;
+  margin: 0 auto;
   margin-top: 25px;
 }
 
 .portfolio__item__text{
-  padding-top: 30px;
+  padding-top: 60px;
 }
+
+//Media queries
+@import "./small";
+@import "./medium";
+@import "./large";
+@import "./xLarge";

@@ -7,7 +7,10 @@ const TerserWebpackPlugin = require('terser-webpack-plugin')
 
 module.exports = {
     mode: 'production',
-    entry: path.resolve(__dirname, 'src/entry.js'),
+    entry: {
+      index: [path.resolve(__dirname,'src/indexEntry.js'),path.resolve(__dirname,'src/indexDevEntry.js')],
+      portfolio: [path.resolve(__dirname,'src/portfolioEntry.js'),path.resolve(__dirname,'src/portfolioDevEntry.js')]
+    },
     output: {
       filename: '[name].[hash].js'
     },
@@ -41,6 +44,21 @@ module.exports = {
     plugins: [
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, 'src/index.html'),
+        chunks: ['index'],
+        filename: './index.html',
+        minify: {
+          collapseWhitespace: true,
+          removeComments: true,
+          removeRedundantAttributes: true,
+          removeScriptTypeAttributes: true,
+          removeStyleLinkTypeAttributes: true,
+          useShortDoctype: true
+        }
+      }),
+      new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, 'src/portfolio.html'),
+        chunks: ['portfolio'],
+        filename: './portfolio.html',
         minify: {
           collapseWhitespace: true,
           removeComments: true,
