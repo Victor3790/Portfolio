@@ -1,0 +1,8 @@
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm){
+  section{
+    h2{
+      margin-bottom: 50px;
+    }
+  }
+}

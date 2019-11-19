@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:dev": "webpack-dev-server --config webpack.dev.js --open",
+    "build:dev": "webpack-dev-server --config webpack.dev.js --open --host 0.0.0.0",
     "build:prod": "webpack --config webpack.prod.js"
   },
   "keywords": [],

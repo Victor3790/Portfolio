@@ -1,0 +1,9 @@
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+  #about{
+  min-height: calc(100vh - 90px);
+    p{
+      text-align: left;
+    }
+  }
+}

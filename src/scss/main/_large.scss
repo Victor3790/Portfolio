@@ -1,0 +1,8 @@
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+  section{
+    h2{
+      margin-bottom: 80px;
+    }
+  }
+}

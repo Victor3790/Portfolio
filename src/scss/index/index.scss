@@ -1,0 +1,57 @@
+@import "../main/main";
+
+header{
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  overflow: hidden;
+  img{
+    position: relative;
+    bottom: -100px;
+    height: 60px;
+  }
+}
+
+.bounceBox{
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: linear;
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+#headerText{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+#about{
+  p{
+    text-align: center;
+  }
+  .photo{
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+@import "./medium";
+@import "./large";
+@import "./xLarge";

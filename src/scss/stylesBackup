@@ -1,0 +1,31 @@
+#about{
+  p{
+    text-align: center;
+  }
+  img{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: $internalMargin;
+  }
+}
+
+#projects{
+  img{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: $internalMargin;
+  }
+}
+
+#technologies{
+  img{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: $internalMargin;
+    color: $green;
+  }
+  p{
+    text-align: center;
+    margin-top: $internalMargin;
+  }
+}
