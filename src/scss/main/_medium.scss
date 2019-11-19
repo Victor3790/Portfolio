@@ -1,7 +1,7 @@
 // Medium devices (tablets, 768px and up)
 @include media-breakpoint-up(md) {
-  nav{
-    ul{
+  .menu{
+    .menu__container{
       justify-content: flex-start;
     }
   }

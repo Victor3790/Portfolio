@@ -1,0 +1,23 @@
+@import "../main/main";
+
+.portfolio{
+  padding: 10px 0;
+  margin-top: 70px;
+}
+
+.portfolio__item{
+  padding: 30px 0;
+}
+
+.portfolio__item__title{
+  font-size: 1.30rem;
+}
+
+.portfolio__item__image{
+  width: 95%;
+  margin-top: 25px;
+}
+
+.portfolio__item__text{
+  padding-top: 30px;
+}

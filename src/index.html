@@ -9,48 +9,44 @@
 </head>
 <body>
 
-  <nav>
+  <nav class="menu">
     <div class="container">
       <div class="row">
         <div class="col">
-          <ul>
-            <li>
-              <img src="./img/icons/github.svg" alt="">
-              <p>GitHub</p>
-            </li>
-            <li>Acerca de mí</li>
-            <li>Portafolio</li>
+          <ul class="menu__container">
+            <li class="menu__item">Acerca de mí</li>
+            <li class="menu__item">Portafolio</li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
 
-  <header>
+  <header class="hero">
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
-    <div id="headerText">
-      <h1>Víctor Crespo</h1>
-      <h3>Desarrollador web</h3>
+    <div id="headerText" class="hero__container">
+      <h1 class="hero__name">Víctor Crespo</h1>
+      <h3 class="hero__title">Desarrollador web</h3>
       <a href="#about">
-        <img class="bounceBox bounce" src="./img/icons/arrow.svg" alt="">
+        <img class="hero__arrow bounceBox bounce" src="./img/icons/arrow.svg" alt="">
       </a>
     </div>
   </header>
 
   <main>
     <div class="container">
-      <section id="about">
+      <section id="about" class="about">
         <div class="row">
           <div class="col-12">
             <div class="title">
-              <h2>Acerca de mí</h2>
-              <h3>Acerca de mí</h3>
+              <h2 class="title__text--behind">Acerca de mí</h2>
+              <h3 class="title__text--front">Acerca de mí</h3>
             </div>
           </div>
           <div class="col-12 col-md-6">
-            <p>
+            <p class="about__text">
                 Mi nombre es Víctor Hugo Escareño Crespo;
                 soy desarrollador web y un apasionado de la
                 programación. Me especializo en la creación
@@ -70,14 +66,14 @@
           </div>
 
           <div class="col-12 col-md-6">
-            <img class="photo" src="img/face.png" alt="">
+            <img class="photo about__photo" src="img/face.png" alt="">
           </div>
 
           <div class="col-12">
             <a href="#">
               <div class="link">
-                <p>Portafolio</p>
-                <img src="img/icons/arrowRight.svg" alt="">
+                <p class="link__text">Portafolio</p>
+                <img class="link__arrow" src="img/icons/arrowRight.svg" alt="">
               </div>
             </a>
           </div>

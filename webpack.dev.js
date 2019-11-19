@@ -2,7 +2,10 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: [path.resolve(__dirname,'src/entry.js'),path.resolve(__dirname,'src/devEntry.js')],
+  entry: {
+    index: [path.resolve(__dirname,'src/indexEntry.js'),path.resolve(__dirname,'src/indexDevEntry.js')],
+    portfolio: [path.resolve(__dirname,'src/portfolioEntry.js'),path.resolve(__dirname,'src/portfolioDevEntry.js')]
+  },
   mode: 'development',
   devServer: {
     hot: true
@@ -25,8 +28,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Dev',
-      template: path.resolve(__dirname,'src/index.html')
+      template: path.resolve(__dirname,'src/index.html'),
+      chunks: ['index'],
+      filename: './index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname,'src/portfolio.html'),
+      chunks: ['portfolio'],
+      filename: './portfolio.html'
     })
   ]
 };

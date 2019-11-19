@@ -1,35 +1,16 @@
 @import "../main/main";
 
-.hero{
+header{
   height: 100vh;
   padding: 0;
   margin: 0;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   overflow: hidden;
-}
-
-.hero__container{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.hero__name{
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.hero__title{
-  text-align: center;
-}
-
-.hero__arrow{
-  position: relative;
-  bottom: -100px;
-  height: 60px;
+  img{
+    position: relative;
+    bottom: -100px;
+    height: 60px;
+  }
 }
 
 .bounceBox{
@@ -47,18 +28,28 @@
     100% { transform: translateY(0); }
 }
 
-.about{
-  padding: 100px 0;
+#headerText{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 
-.about__text{
-  text-align: center;
-}
-
-.about__photo{
-  width: 230px;
-  margin: 0 auto;
-  margin-top: 50px;
+#about{
+  p{
+    text-align: center;
+  }
+  .photo{
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
 }
 
 @import "./medium";
