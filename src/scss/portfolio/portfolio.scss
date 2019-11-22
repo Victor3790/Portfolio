@@ -24,6 +24,17 @@
   padding-top: 60px;
 }
 
+[id*="item"]{
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 1s ease-in-out;
+}
+
+[id*="item"].visible{
+  opacity: 1;
+  transform: none;
+}
+
 //Media queries
 @import "./small";
 @import "./medium";
