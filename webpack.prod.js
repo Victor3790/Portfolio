@@ -8,8 +8,8 @@ const TerserWebpackPlugin = require('terser-webpack-plugin')
 module.exports = {
     mode: 'production',
     entry: {
-      index: [path.resolve(__dirname,'src/indexEntry.js'),path.resolve(__dirname,'src/indexDevEntry.js')],
-      portfolio: [path.resolve(__dirname,'src/portfolioEntry.js'),path.resolve(__dirname,'src/portfolioDevEntry.js')]
+      index: [path.resolve(__dirname,'src/indexEntry.js')],
+      portfolio: [path.resolve(__dirname,'src/portfolioEntry.js')]
     },
     output: {
       filename: '[name].[hash].js'
@@ -25,6 +25,10 @@ module.exports = {
         {
           test: /\.scss$/,
           use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
+        },
+        {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader']
         },
         {
           test: /\.html$/,

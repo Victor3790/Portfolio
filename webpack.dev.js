@@ -17,6 +17,10 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
       },
       {
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader', 'postcss-loader']
+      },
+      {
         test: /\.html$/,
         use: ['html-loader']
       },
@@ -25,12 +29,6 @@ module.exports = {
         use: ['file-loader']
       }
     ]
-  },
-  resolve: {
-    alias: {
-        "ScrollMagic": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'),
-        "debug.addIndicators": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js')
-    },
   },
   plugins: [
     new HtmlWebpackPlugin({
